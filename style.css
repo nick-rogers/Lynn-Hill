@@ -1,6 +1,8 @@
 body {
     /*background-color: #ff8d51;*/
     margin: 0;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
   }
 
 .wrapper {
@@ -9,14 +11,19 @@ body {
   height: 0;
   padding-bottom: 1100%;
   background-size: 100% 100%;
+  transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
 }
 
 .parallax {
   -webkit-perspective: 1px;
+  -moz-perspective: 1px;
   perspective: 1px;
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
+  transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
 }
 
 .pl {
@@ -25,11 +32,14 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
+  transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
 }
 
 .p-top {
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
   width: 100%;
   display: block;
   height: 300px;
@@ -38,11 +48,15 @@ body {
   font-size: 40px;
   color: white;
   text-align: center;
+  transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
 }
 
 .p-back {
   transform: translateZ(-1.5px) scale(2.5);
   -webkit-transform: translateZ(-1.5px) scale(2.5);
+  -moz-transform: translateZ(-1.5px) scale(2.5);
+
   width: 100%;
   display: block;
   font-family: sans-serif;
@@ -51,11 +65,15 @@ body {
   text-align: center;
   /*background-color: blue;*/
   z-index: 50;
+  transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
 }
 
 .p-back-2 {
   transform: translateZ(-2px) scale(3);
   -webkit-transform: translateZ(-2px) scale(3);
+  -moz-transform: translateZ(-2px) scale(3);
+
   width: 100%;
   display: block;
   font-family: sans-serif;
@@ -64,11 +82,15 @@ body {
   text-align: center;
   /*background-color: blue;*/
   z-index: 30;
+  transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
 }
 
 .p-far {
   transform: translateZ(-3px) scale(4);
   -webkit-transform: translateZ(-3px) scale(4);
+  -moz-transform: translateZ(-3px) scale(4);
+
   width: 100%;
   display: block;
   font-family: sans-serif;
@@ -77,11 +99,15 @@ body {
   text-align: center;
   /*background-color: green;*/
   z-index: 25;
+  transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
 }
 
 .p-furthest {
   transform: translateZ(-4px) scale(5);
   -webkit-transform: translateZ(-4px) scale(5);
+  -moz-transform: translateZ(-4px) scale(5);
+ 
   width: 100%;
   display: block;
   font-family: sans-serif;
@@ -90,6 +116,8 @@ body {
   text-align: center;
   /*background-color: green;*/
   z-index: 5;
+  transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
 }
 
 .cloud-1, .cloud-2, .cloud-3 {
@@ -164,6 +192,7 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   margin-top: 3480vw;
+  -moz-transform-style: preserve-3d;
 }
 
 #sec3 {
@@ -172,6 +201,10 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   margin-top: 3300vw;
+  -moz-transform-style: preserve-3d;
+  transform: translateZ(-2px) scale(3);
+  -webkit-transform: translateZ(-2px) scale(3);
+  -moz-transform: translateZ(-2px) scale(3);
 }
 
 #sec4 {
@@ -180,6 +213,8 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   margin-top: 2650vw;
+  -moz-transform-style: preserve-3d;
+  z-index: 25;
 }
 
 #sec5 {
@@ -189,6 +224,7 @@ body {
   background-repeat: no-repeat;
   z-index: 10;
   margin-top: 1600vw;
+  -moz-transform-style: preserve-3d;
 }
 
 #sec6 {
@@ -198,6 +234,7 @@ body {
   background-repeat: no-repeat;
   z-index: 8;
   margin-top: 1275vw;
+  -moz-transform-style: preserve-3d;
 }
 
 #sec7 {
@@ -206,6 +243,7 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   margin-top: 900vw;
+  -moz-transform-style: preserve-3d;
 }
 
 .b-circle {
@@ -217,7 +255,7 @@ body {
   background-image: url(circle-1.png);
   background-size: 100% 100%;
   text-align: center;
-  z-index: 10;
+  z-index: 9;
 }
 
 .circle-2 {
@@ -247,13 +285,17 @@ body {
 }
 
 @keyframes rotate-one {
-  0% {transform: rotate(0deg);}
-  100%{transform: rotate(360deg);}
+  0% {transform: rotate(0deg);
+  -moz-transform: rotate(0deg);}
+  100%{transform: rotate(360deg);
+    -moz-transform: rotate(360deg);}
 }
 
 @keyframes rotate-two {
-  0% {transform: rotate(0deg);}
-  100%{transform: rotate(-360deg);}
+  0% {transform: rotate(0deg);
+      -moz-transform: rotate(0deg);}
+  100%{transform: rotate(-360deg);
+    -moz-transform: rotate(360deg);}
 }
 
 .lynn-1 {

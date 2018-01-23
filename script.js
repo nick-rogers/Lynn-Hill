@@ -3,22 +3,32 @@ $(document).ready(function(){
 	var section = document.getElementById("main");
 	section.scrollTop = section.scrollHeight;
 
+	var isFirefox = typeof InstallTrigger !== 'undefined';
+	var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+	console.log(isFirefox);
+	console.log(isSafari);
+
+	if(isFirefox){
+		$('#sec5').css('margin-top', '1550vw');
+		$('#sec5').css('height', '270vw');
+		$('#sec5').css('background-size', '100% 130%');
+		$('.b-circle').css('display','none');
+	}
+	else if(isSafari){
+		$('#sec5').css('margin-top', '1550vw');
+		$('#sec5').css('height', '270vw');
+		$('#sec5').css('background-size', '100% 130%');
+		$('.b-circle').css('display','none');
+	}
+
 	setTimeout(pointed, 2000);
 
 	function pointed() {
 		$('.scroll-up').fadeIn(400);
 	}
-
-
-	$('#sp1').mouseover(function(){
-		console.log('some shiz');
-	});
-
-
 	$('#main').scroll(function(){
-		console.log($('#sp1').offset().top);
 		if($('#sp1').offset().top > -580){
-			console.log('finally');
 			$('.c1').fadeIn(500);
 			$('.c-1').css('width', '25vw');
 			$('.c-1').css('height', '25vw');
