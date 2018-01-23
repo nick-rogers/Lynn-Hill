@@ -1,0 +1,811 @@
+body {
+    /*background-color: #ff8d51;*/
+    margin: 0;
+  }
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 1100%;
+  background-size: 100% 100%;
+}
+
+.parallax {
+  perspective: 1px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.pl {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.p-top {
+  transform: translateZ(0);
+  width: 100%;
+  display: block;
+  height: 300px;
+  /*background-color: grey;*/
+  font-family: sans-serif;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+
+.p-back {
+  transform: translateZ(-1.5px) scale(2.5);
+  width: 100%;
+  display: block;
+  font-family: sans-serif;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  /*background-color: blue;*/
+  z-index: 50;
+}
+
+.p-back-2 {
+  transform: translateZ(-2px) scale(3);
+  width: 100%;
+  display: block;
+  font-family: sans-serif;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  /*background-color: blue;*/
+  z-index: 30;
+}
+
+.p-far {
+  transform: translateZ(-3px) scale(4);
+  width: 100%;
+  display: block;
+  font-family: sans-serif;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  /*background-color: green;*/
+  z-index: 25;
+}
+
+.p-furthest {
+  transform: translateZ(-4px) scale(5);
+  width: 100%;
+  display: block;
+  font-family: sans-serif;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  /*background-color: green;*/
+  z-index: 5;
+}
+
+.cloud-1, .cloud-2, .cloud-3 {
+  display: block;
+  position: absolute;
+  background-size: 100% 100%;
+}
+
+.cloud-1 {
+  height: 40vw;
+  width: 80vw;
+  background-image: url(cloud-1.png);
+  top: 0;
+  z-index: 40;
+  margin-top: 190vw;
+  margin-left: 700px;
+  animation-name: cloudAnimate-one;
+  animation-duration: 100s;
+}
+
+.cloud-2 {
+  height: 40vw;
+  width: 90vw;
+  background-image: url(cloud-2.png);
+  top: 0;
+  z-index: 40;
+  margin-top: 170vw;
+  margin-left: -200px;
+  animation-name: cloudAnimate-two;
+  animation-duration: 80s;
+}
+
+.cloud-3 {
+  height: 40vw;
+  width: 110vw;
+  background-image: url(cloud-3.png);
+  top: 0;
+  z-index: 40;
+  margin-top: 140vw;
+  margin-left: 500px;
+  animation-name: cloudAnimate-three;
+  animation-duration: 100s;
+}
+
+@keyframes cloudAnimate-one {
+  0%   {margin-left: 700px;}
+  100% {margin-left: -1000px;}
+}
+
+@keyframes cloudAnimate-two {
+  0%   {margin-left: -200px;}
+  100% {margin-left: -1000px;}
+}
+
+@keyframes cloudAnimate-three {
+  0%   {margin-left: 500px;}
+  100% {margin-left: -1200px;}
+}
+
+#sec1 {
+  height: 200vw;
+  background-image: url(sec1.png);
+  background-size: 100% 100%;
+  margin-bottom: 0px;
+  z-index: 100;
+  margin-top: 3800vw;
+}
+
+#sec2 {
+  height: 280vw;
+  background-image: url(sec2.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-top: 3480vw;
+}
+
+#sec3 {
+  height: 120vw;
+  background-image: url(sec3.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-top: 3300vw;
+}
+
+#sec4 {
+  height: 300vw;
+  background-image: url(sec4.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-top: 2650vw;
+}
+
+#sec5 {
+  height: 360vw;
+  background-image: url(sec5.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 10;
+  margin-top: 1600vw;
+}
+
+#sec6 {
+  height: 70vw;
+  background-image: url(sec6.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 8;
+  margin-top: 1275vw;
+}
+
+#sec7 {
+  height: 200vw;
+  background-image: url(sec7.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-top: 900vw;
+}
+
+.b-circle {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 95vw;
+  margin-top: 290vw;
+  background-image: url(circle-1.png);
+  background-size: 100% 100%;
+  text-align: center;
+}
+
+.circle-2 {
+  display: inline-block;
+  width: 90%;
+  height: 87vw;
+  background-image: url(circle-2.png);
+  background-size: 100% 100%;
+  margin-top: 3.5vw;
+  animation-name: rotate-one;
+  animation-duration: 40s;
+  animation-iteration-count: 10;
+}
+
+.circle-3 {
+  display: inline-block;
+  width: 90%;
+  height: 80vw;
+  background-image: url(circle-3.png);
+  background-size: 100% 100%;
+  margin-top: 3vw;
+  animation-name: rotate-two;
+  animation-duration: 20s;
+  animation-iteration-count: 10;
+}
+
+@keyframes rotate-one {
+  0% {transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+
+@keyframes rotate-two {
+  0% {transform: rotate(0deg);}
+  100%{transform: rotate(-360deg);}
+}
+
+.lynn-1 {
+  position: absolute;
+  display: block;
+  width: 30vw;
+  height: 50vw;
+  background-image: url(lynn-1.png);
+  background-size: 100% 100%;
+  margin-left: 47vw;
+  margin-top: 34vw;
+  z-index: 60;
+}
+
+.rope {
+  position: absolute;
+  display: block;
+  width: 70vw;
+  height: 140vw;
+  background-image: url(rope.png);
+  background-size: 100% 100%;
+  margin-top: 60vw;
+  margin-left: 14vw;
+  z-index: 50;
+  opacity: 0.7;
+}
+
+.lynn-2 {
+  position: absolute;
+  display: block;
+  width: 35vw;
+  height: 85vw;
+  background-image: url(lynn2.png);
+  background-size: 100% 100%;
+  margin-left: 31vw;
+  margin-top: 138vw;
+  z-index: 60;
+}
+
+.nest {
+  position: absolute;
+  display: block;
+  width: 18vw;
+  height: 18vw;
+  background-image: url(nest.png);
+  background-size: 100% 100%;
+  margin-top: 214vw;
+  margin-left: 4.5vw;
+}
+
+.bird {
+  width: 20vw;
+  height: 18vw;
+  margin-top: 235vw;
+  margin-left: 4.5vw;
+  animation-name: birdAnimate;
+  animation-duration: 8s;
+  animation-delay: 5s;
+  animation-iteration-count: 30;
+  z-index: 70;
+  filter: brightness(1.4);
+}
+
+@keyframes birdAnimate {
+  0%{margin-left: 200vw}
+  100%{margin-left: -100vw;}
+}
+
+.rock {
+  position: absolute;
+  display: block;
+  width: 33vw;
+  height: 36vw;
+  background-image: url(rock.png);
+  background-size: 100% 100%;
+  margin-top: 147vw;
+  margin-left: 42.5vw;
+  transition: all ease-in-out 4s;
+  z-index: 90;
+}
+
+.flag {
+  width: 20vw;
+  height: 18vw;
+  margin-top: 210vw;
+  margin-left: 30vw;
+  z-index: 70;
+}
+
+.awards {
+  position: absolute;
+  display: block;
+  width: 80vw;
+  height: 63vw;
+  background-image: url(awards.png);
+  background-size: 100% 100%;
+  margin-top: -36.5vw;
+  margin-left: 9.5vw;
+}
+
+.dots {
+  position: absolute;
+  display: block;
+  width: 55vw;
+  height: 35vw;
+  margin-top: 80vw;
+  margin-left: 27vw;
+  opacity: 0.8;
+  /*background-image: url(dots.gif);*/
+  background-size: 100% 100%;
+}
+
+.t-1977 {
+  position: absolute;
+  display: block;
+  width: 30vw;
+  height: 30vw;
+  margin-top: 73vw;
+  margin-left: 12vw;
+  background-image: url(t-1977.png);
+  background-size: 100% 100%;
+  opacity: 0.8;
+}
+
+.climb {
+  width: 3vw;
+  height: 5vw;
+  position: absolute;
+  display: block;
+  margin-top: 77vw;
+  margin-left: 32vw;
+}
+
+.c-1 {
+  display: block;
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  background-image: url(c-1.png);
+  background-size: 100% 100%;
+  margin-left: 39vw;
+  margin-top: 90vw;
+  z-index: 100;
+  transition: all ease-in-out 0.5s;
+}
+
+.c-2 {
+  display: block;
+  position: absolute;
+  width: 15vw;
+  height: 15vw;
+  background-image: url(c-2.png);
+  background-size: 100% 100%;
+  margin-left: 12vw;
+  margin-top: 92vw;
+  z-index: 100;
+  transition: all ease-in-out 0.5s;
+}
+
+.c-3 {
+  display: block;
+  position: absolute;
+  width: 15vw;
+  height: 15vw;
+  background-image: url(c-3.png);
+  background-size: 100% 100%;
+  margin-left: 72vw;
+  margin-top: 92vw;
+  z-index: 100;
+  transition: all ease-in-out 0.5s;
+}
+
+.c-4 {
+  display: block;
+  position: absolute;
+  width: 25vw;
+  height: 25vw;
+  background-image: url(c-4.png);
+  background-size: 100% 100%;
+  margin-left: 63vw;
+  margin-top: 80vw;
+  z-index: 100;
+  transition: all ease-in-out 0.5s;
+}
+
+.t-1975 {
+  display: block;
+  position: absolute;
+  width: 25vw;
+  height: 14vw;
+  background-image: url(t-1975.png);
+  background-size: 100% 100%;
+  margin-top: 205vw;
+  margin-left: 12vw;
+  z-index: 80;
+}
+
+.sp {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  margin-top: 40vw;
+  z-index: 300;
+}
+
+#sp3 {
+  margin-top: 180vw;
+}
+
+#sp4 {
+  margin-top: 80vw;
+}
+
+.c1, .c2 {
+  display: none;
+}
+
+.t-79-88 {
+  display: block;
+  position: absolute;
+  width: 55vw;
+  height: 22vw;
+  background-image: url(t-79-88.png);
+  background-size: 100% 100%;
+  margin-top: 95vw;
+  margin-left: 22vw;
+  z-index: 80;
+  opacity: 0.7;
+}
+
+.t-nose {
+  display: block;
+  position: absolute;
+  width: 55vw;
+  height: 22vw;
+  background-image: url(t-nose.png);
+  background-size: 100% 100%;
+  margin-top: -8vw;
+  margin-left: 22vw;
+  z-index: 80;
+}
+
+.t-2900 {
+  display: block;
+  position: absolute;
+  width: 55vw;
+  height: 22vw;
+  background-image: url(t-2900.png);
+  background-size: 100% 100%;
+  margin-top: 58vw;
+  margin-left: 43vw;
+  z-index: 80;
+  opacity: 0.45;
+  display: none;
+}
+
+.t-4days {
+  display: block;
+  position: absolute;
+  width: 43vw;
+  height: 17vw;
+  background-image: url(t-4days.png);
+  background-size: 100% 100%;
+  margin-top: 75vw;
+  margin-left: 53vw;
+  z-index: 80;
+  opacity: 0.45;
+  display: none;
+}
+
+.t-first {
+  display: block;
+  position: absolute;
+  width: 45vw;
+  height: 18vw;
+  background-image: url(t-first.png);
+  background-size: 100% 100%;
+  margin-top: 85vw;
+  margin-left: 53vw;
+  z-index: 80;
+  opacity: 0.45;
+  display: none;
+}
+
+.white-ring {
+  display: block;
+  position: absolute;
+  width: 10vw;
+  height: 10vw;
+  background-image: url(white-ring.png);
+  background-size: 100% 100%;
+  margin-top: 74vw;
+  margin-left: 28vw;
+  z-index: 80;
+  opacity: 1;
+  border-radius: 10vw;
+  transition: all ease-in-out 0.6s;
+}
+
+.text-1 {
+  display: block;
+  position: absolute;
+  width: 35vw;
+  height: 19vw;
+  background-image: url(text-1.png);
+  background-size: 100% 100%;
+  margin-top: 118vw;
+  margin-left: 32vw;
+  z-index: 100;
+}
+
+.text-2 {
+  display: block;
+  position: absolute;
+  width: 32vw;
+  height: 18vw;
+  background-image: url(text-2.png);
+  background-size: 100% 100%;
+  margin-top: 218vw;
+  margin-left: 8.5vw;
+  z-index: 120;
+}
+
+.text-3 {
+  display: block;
+  position: absolute;
+  width: 32vw;
+  height: 18vw;
+  background-image: url(text-3.png);
+  background-size: 100% 100%;
+  margin-top: 110vw;
+  margin-left: 64vw;
+  z-index: 120;
+}
+
+.text-4 {
+  display: block;
+  position: absolute;
+  width: 32vw;
+  height: 18vw;
+  background-image: url(text-4.png);
+  background-size: 100% 100%;
+  margin-top: 115vw;
+  margin-left: 34vw;
+  z-index: 120;
+}
+
+.text-5 {
+  display: block;
+  position: absolute;
+  width: 32vw;
+  height: 18vw;
+  background-image: url(text-5.png);
+  background-size: 100% 100%;
+  margin-top: 25vw;
+  margin-left: 34vw;
+  z-index: 120;
+}
+
+.text-6 {
+  display: block;
+  position: absolute;
+  width: 32vw;
+  height: 19vw;
+  background-image: url(text-6.png);
+  background-size: 100% 100%;
+  margin-top: 245vw;
+  margin-left: 34vw;
+  z-index: 120;
+}
+
+.text-7 {
+  display: block;
+  position: absolute;
+  width: 27vw;
+  height: 15vw;
+  background-image: url(text-7.png);
+  background-size: 100% 100%;
+  margin-top: 162vw;
+  margin-left: 45vw;
+  z-index: 80;
+}
+
+.text-8 {
+  display: block;
+  position: absolute;
+  width: 27vw;
+  height: 15vw;
+  background-image: url(text-8.png);
+  background-size: 100% 100%;
+  margin-top: 83vw;
+  margin-left: 38vw;
+  z-index: 80;
+}
+
+.first-circle {
+  display: block;
+  position: absolute;
+  width: 22vw;
+  height: 22vw;
+  background-image: url(first-circle.png);
+  background-size: 100% 100%;
+  margin-left: 39vw;
+  margin-top: 165vw;
+  z-index: 100;
+}
+
+.header {
+  display: block;
+  position: absolute;
+  width: 85vw;
+  height: 30vw;
+  background-image: url(header.png);
+  background-size: 100% 100%;
+  margin-top: 160vw;
+  margin-left: 6vw;
+}
+
+.legend {
+  display: block;
+  position: absolute;
+  width: 30vw;
+  height: 28vw;
+  background-image: url(legend.png);
+  background-size: 100% 110%;
+  margin-left: 35vw;
+  margin-top: 171vw;
+  z-index: 120;
+  opacity: 0.9;
+}
+
+.scroll-up {
+  display: none;
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  background-image: url(scroll-up.png);
+  background-size: 100% 100%;
+  margin-left: 45vw;
+  margin-top: 142vw;
+  z-index: 150;
+  transition: all ease-in-out 3s;
+  animation-name: arrow;
+  animation-duration: 2s;
+  animation-iteration-count: 10;
+}
+
+@keyframes arrow {
+  0%{opacity: 1;}
+  50%{opacity: 0.2;}
+  100%{opacity: 1;}
+}
+
+.c-5 {
+  display: none;
+  position: absolute;
+  width: 10vw;
+  height: 10vw;
+  background-image: url(injury.png);
+  background-size: 100% 100%;
+  margin-top: 155vw;
+  margin-left: 30vw;
+  z-index: 100;
+  transition: all ease-in-out 0.5s;
+}
+
+.main-2 {
+  width: 100%;
+  height: 900px;
+  background-color: white;
+}
+
+.bd1, .bd2, .bd3, .bd4 {
+  transition: all ease-in-out 4s;
+}
+
+.bd1 {
+  position: absolute;
+  width: 100%;
+  height: 70vw;
+  background-image: url(bd-1.png);
+  background-size: 100% 100%;
+  z-index: 100;
+  margin-top: 0;
+}
+
+.bd2 {
+  position: absolute;
+  width: 100%;
+  height: 90vw;
+  background-image: url(bd-2.png);
+  background-size: 100% 100%;
+  z-index: 80;
+  margin-top: 0vw;
+}
+
+.bd3 {
+  position: absolute;
+  width: 100%;
+  height: 50vw;
+  background-image: url(bd-3.png);
+  background-size: 100% 100%;
+  z-index: 60;
+  margin-top: 20vw;
+}
+
+.bd4 {
+  position: absolute;
+  width: 100%;
+  height: 40vw;
+  background-image: url(bd-4.png);
+  background-size: 100% 100%;
+  z-index: 40;
+  margin-top: 0vw;
+}
+
+.thing {
+  position: absolute;
+  display: block;
+  width: 82%;
+  height: 65vw;
+  background-image: url(pic-2017.png);
+  background-size: 100% 100%;
+  z-index: 200;
+  margin-left: 10vw;
+  margin-top: 15vw;
+  opacity: 0;
+  transition: all ease-in-out 2s;
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  width: 15vw;
+  height: 5vw;
+  background-color: #11182e;
+  margin-top: 62vw;
+  color: white;
+  font-family: serif;
+  font-weight: 500;
+  font-size: 1.6vw;
+  line-height: 4.3vw;
+  transition: all ease-in-out 0.2s;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: white;
+  color: #11182e ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
