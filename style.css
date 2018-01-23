@@ -12,6 +12,7 @@ body {
 }
 
 .parallax {
+  -webkit-perspective: 1px;
   perspective: 1px;
   height: 100%;
   overflow-x: hidden;
@@ -28,6 +29,7 @@ body {
 
 .p-top {
   transform: translateZ(0);
+  -webkit-transform: translateZ(0);
   width: 100%;
   display: block;
   height: 300px;
@@ -40,6 +42,7 @@ body {
 
 .p-back {
   transform: translateZ(-1.5px) scale(2.5);
+  -webkit-transform: translateZ(-1.5px) scale(2.5);
   width: 100%;
   display: block;
   font-family: sans-serif;
@@ -52,6 +55,7 @@ body {
 
 .p-back-2 {
   transform: translateZ(-2px) scale(3);
+  -webkit-transform: translateZ(-2px) scale(3);
   width: 100%;
   display: block;
   font-family: sans-serif;
@@ -64,6 +68,7 @@ body {
 
 .p-far {
   transform: translateZ(-3px) scale(4);
+  -webkit-transform: translateZ(-3px) scale(4);
   width: 100%;
   display: block;
   font-family: sans-serif;
@@ -76,6 +81,7 @@ body {
 
 .p-furthest {
   transform: translateZ(-4px) scale(5);
+  -webkit-transform: translateZ(-4px) scale(5);
   width: 100%;
   display: block;
   font-family: sans-serif;
@@ -211,6 +217,7 @@ body {
   background-image: url(circle-1.png);
   background-size: 100% 100%;
   text-align: center;
+  z-index: 10;
 }
 
 .circle-2 {
@@ -223,6 +230,7 @@ body {
   animation-name: rotate-one;
   animation-duration: 40s;
   animation-iteration-count: 10;
+  z-index: 9;
 }
 
 .circle-3 {
@@ -235,6 +243,7 @@ body {
   animation-name: rotate-two;
   animation-duration: 20s;
   animation-iteration-count: 10;
+  z-index: 8;
 }
 
 @keyframes rotate-one {
