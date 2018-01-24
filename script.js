@@ -6,9 +6,6 @@ $(document).ready(function(){
 	var isFirefox = typeof InstallTrigger !== 'undefined';
 	var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
 
-	console.log(isFirefox);
-	console.log(isSafari);
-
 	if(isFirefox){
 		$('#sec5').css('margin-top', '1550vw');
 		$('#sec5').css('height', '270vw');
@@ -69,7 +66,7 @@ $(document).ready(function(){
 
 			}
 		}
-		if($('#sp4').offset().top > 0){
+		if($('#sp4').offset().top > 300){
 			setTimeout(fadeOne, 800);
 			$('#main').css('overflow-y', 'hidden');
 
